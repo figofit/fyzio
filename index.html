@@ -2,362 +2,199 @@
 <html lang="cs">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>GALAXY DENT s.r.o. | Moderní zubní ordinace Olomouc</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fit Progress Dashboard</title>
     <meta
       name="description"
-      content="GALAXY DENT s.r.o. – moderní zubní ordinace v centru Olomouce. Přijímáme nové pacienty, nabízíme komplexní stomatologickou péči a online objednání."
+      content="Jednoduchý fitness dashboard pro týdenní tréninky, roční progres, databázi cviků a fullbody A/B plán."
     />
-    <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="site-header">
-      <nav class="nav">
-        <a class="logo" href="#top">GALAXY DENT s.r.o.</a>
-        <div class="nav-links">
-          <a href="#sluzby">Služby</a>
-          <a href="#prubeh">První návštěva</a>
-          <a href="#tym">Tým</a>
-          <a href="#reference">O nás</a>
-          <a href="#kontakt" class="button small">Objednat se</a>
+    <header class="topbar">
+      <div class="wrap topbar-inner">
+        <div>
+          <p class="eyebrow">FIT CRM · osobní dashboard</p>
+          <h1>Klientský progress dashboard</h1>
         </div>
-        <button class="burger" aria-label="Otevřít menu" aria-expanded="false">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-      </nav>
+        <div class="week-pill" id="currentWeekLabel">Týden: —</div>
+      </div>
     </header>
 
-    <main id="top">
-      <section class="hero">
-        <div class="hero-content">
-          <p class="eyebrow">GALAXY DENT · zubní ordinace Olomouc</p>
-          <p style="color: #d00000; font-weight: 800; font-size: 1.4rem">Přijímáme nové pacienty!!!</p>
-          <h1>Na vašem úsměvu záleží!</h1>
-          <p class="lead">
-            Hledáte špičkovou zubní péči, které můžete důvěřovat? Zveme vás do nově zrekonstruované,
-            moderní zubní ordinace přímo v srdci města Olomouc. Klademe důraz na bezbolestné ošetření,
-            individuální přístup a nejmodernější technologie a metody.
-          </p>
-          <div class="hero-actions">
-            <a class="button" href="#objednat">Objednat online</a>
-            <a class="button ghost" href="#sluzby">Naše služby</a>
-          </div>
-          <div class="hero-stats">
-            <div>
-              <h3>Komplexní péče</h3>
-              <p>od prevence po estetiku</p>
-            </div>
-            <div>
-              <h3>Bezbolestné ošetření</h3>
-              <p>moderní metody a technologie</p>
-            </div>
-            <div>
-              <h3>Individuální přístup</h3>
-              <p>léčba na míru pro každého</p>
-            </div>
-          </div>
+    <main class="wrap layout">
+      <section class="card" id="weeklySection">
+        <div class="card-header">
+          <h2>Týdenní přehled (Po–Ne)</h2>
+          <p>Cíl týdne: <strong>aspoň 3× trénink</strong> a <strong>2× kardio</strong>.</p>
         </div>
-        <div class="hero-visual">
-          <div class="hero-card">
-            <div class="hero-card-top">
-              <p class="badge">Ordinace v centru Olomouce</p>
-              <h2>Moderní zubní ordinace</h2>
-              <p>
-                Ať už potřebujete preventivní prohlídku, dentální hygienu, výplň nebo komplexnější
-                estetické řešení, jsme tu pro vás.
-              </p>
-            </div>
-            <div class="hero-card-bottom">
-              <div>
-                <p>Kontakt</p>
-                <strong>+420 727 825 207</strong>
-              </div>
-              <a class="button small" href="#kontakt">Kde nás najdete</a>
-            </div>
-          </div>
-          <div class="hero-metric">
-            <h4>Logo se připravuje</h4>
-            <p>
-              Pro představu: zub, hvězdy a planeta ve zlaté barvě na bílém pozadí, pod logem název
-              GALAXY DENT a podnázev „zubní ordinace Olomouc“.
-            </p>
-          </div>
-        </div>
-      </section>
 
-      <section class="trust">
-        <div class="trust-grid">
-          <span>Spolupráce se zdravotními pojišťovnami ČR</span>
-          <div class="trust-logos">
-            <div>111 VZP</div>
-            <div>201 VOZP</div>
-            <div>205 ČPZP</div>
-            <div>211 ZP MV ČR</div>
-            <div>213 RBP</div>
-            <div>207 OZP</div>
-          </div>
+        <div class="week-controls">
+          <button class="btn ghost" id="prevWeekBtn">← Předchozí týden</button>
+          <button class="btn ghost" id="thisWeekBtn">Aktuální týden</button>
+          <button class="btn ghost" id="nextWeekBtn">Další týden →</button>
         </div>
-      </section>
 
-      <section id="sluzby" class="section services">
-        <div class="section-header">
-          <h2>Naše služby</h2>
-          <p>
-            Klikněte na službu pro rozbalení. Popisy budeme postupně doplňovat.
-          </p>
-        </div>
-        <div class="faq-grid">
-          <details open>
-            <summary>První návštěva</summary>
-            <p>
-              Jak u nás probíhá vstupní vyšetření? Vstupní vyšetření pozůstává ze dvou návštěv. Na první
-              návštěvě vyplňujete anamnestický dotazník. Následně provedeme komplexní vyšetření dutiny
-              ústní a dostanete žádanku na panoramatický zubní RTG. Na druhé návštěvě uděláme
-              intraorální RTG snímky, vyhodnotíme je a dle výsledků zhotovíme individuální léčebný plán
-              s cenovým a časovým návrhem. Při zhotovení plánu otevřeně diskutujeme o různých variantách
-              ošetření s ohledem na vaše představy. S finální léčbou začínáme až po vašem schválení.
-            </p>
-          </details>
-          <details><summary>Preventivní prohlídky</summary></details>
-          <details><summary>Endodoncie – ošetření kořenových kanálků</summary></details>
-          <details><summary>Záchovná stomatologie – ošetření kazu a výměna nevyhovujících výplní</summary></details>
-          <details><summary>Estetická stomatologie – korunky, můstky, protézy</summary></details>
-          <details><summary>Dentální hygiena</summary></details>
-          <details><summary>Bělení zubů</summary></details>
-          <details><summary>Dentální chirurgie – extrakce zubů</summary></details>
-          <details><summary>Parodontologie – léčba onemocnění dásní (gingivitida)</summary></details>
-        </div>
-      </section>
+        <div class="days-grid" id="daysGrid"></div>
 
-      <section id="prubeh" class="section process">
-        <div class="section-header">
-          <h2>Ordinační hodiny</h2>
-          <p>Otevírací doba se může měnit dle objednávek.</p>
-        </div>
-        <div class="process-grid">
-          <div class="process-step">
-            <h3>Ambulance</h3>
-            <p>Po: 7:30–16:00<br />Út: 7:30–13:00<br />St: 7:30–16:00<br />Čt: 7:30–16:00<br />Pá: 7:30–16:00</p>
-          </div>
-          <div class="process-step">
-            <h3>Dentální hygiena</h3>
-            <p>Úterky 13:00–18:00<br />(otevírací doba se může měnit dle objednávek)</p>
-          </div>
-          <div class="process-step">
-            <h3>Ceník</h3>
-            <p>Ceník se aktuálně připravuje.<br />Zatím pouze poznámka: ceník je k nahlédnutí v ordinaci.</p>
-          </div>
-          <div class="process-step">
-            <h3>Parkování</h3>
-            <p>
-              Parkovací dům – Koželužská 934/29<br />
-              Parkoviště Náměstí republiky
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section id="tym" class="section team">
-        <div class="section-header">
-          <h2>Náš tým</h2>
-          <p>Empatie, odbornost, spokojenost.</p>
-        </div>
-        <div class="cards">
-          <article class="card profile">
-            <div class="profile-badge">MDDr.</div>
-            <h3>Lukáš Polanský</h3>
-            <p>Zubní lékař</p>
-            <span>
-              Ukončil jsem lékařskou fakultu v roce 2020. Jsem zubní lékař specializující se na komplexní
-              řešení pro váš úsměv. Využívám moderní technologie a postupy v oblasti preventivní,
-              záchovné i estetické stomatologie. Aktivně absolvuji mnoho školení a kongresů u předních
-              lékařů v Česku i na Slovensku. Mojí prioritou je dlouhodobé zdraví vašich zubů a
-              přirozeně vypadající, sebevědomý úsměv.
-            </span>
+        <div class="summary-grid">
+          <article class="summary-box">
+            <h3>Silový trénink</h3>
+            <p><span id="strengthCount">0</span> / 3</p>
           </article>
-          <article class="card profile">
-            <div class="profile-badge">SZA</div>
-            <h3>Simona Ušáková</h3>
-            <p>Zubní instrumentářka</p>
-            <span>Profesionální asistence při ošetření a péče o vaše pohodlí během návštěvy.</span>
+          <article class="summary-box">
+            <h3>Kardio</h3>
+            <p><span id="cardioCount">0</span> / 2</p>
           </article>
-          <article class="card profile">
-            <div class="profile-badge">Bc.</div>
-            <h3>Bára Křupková</h3>
-            <p>Dentální hygienistka</p>
-            <span>Prevence, dentální hygiena a edukace pro dlouhodobě zdravý úsměv.</span>
+          <article class="summary-box">
+            <h3>Mobilita / aktivní regenerace</h3>
+            <p><span id="mobilityCount">0</span></p>
+          </article>
+          <article class="summary-box status" id="goalStatus">
+            <h3>Status týdne</h3>
+            <p>Ještě není splněno</p>
           </article>
         </div>
       </section>
 
-      <section class="section results" id="objednat">
-        <div class="results-grid">
-          <div>
-            <h2>Online objednávání – rychle, pohodlně, bez čekání</h2>
-            <p>
-              Ulehčete si návštěvu u zubaře s naším moderním online objednávacím systémem. Rezervujte
-              si termín kdykoliv – bez telefonování a zbytečného čekání.
-            </p>
-            <div class="results-metrics">
-              <div>
-                <h3>24/7</h3>
-                <p>Přehledné volné termíny</p>
-              </div>
-              <div>
-                <h3>ihned</h3>
-                <p>Okamžité potvrzení rezervace</p>
-              </div>
-              <div>
-                <h3>auto</h3>
-                <p>Připomínky před návštěvou</p>
-              </div>
-            </div>
-          </div>
-          <div class="results-card">
-            <h3>Výhody pro vás</h3>
+      <section class="card">
+        <div class="card-header">
+          <h2>Roční progres</h2>
+          <p>Zapisuj průběžně výsledky (uloženo v localStorage).</p>
+        </div>
+
+        <form id="progressForm" class="form-grid">
+          <label>
+            Datum
+            <input type="date" name="date" required />
+          </label>
+          <label>
+            Váha (kg)
+            <input type="number" name="weight" step="0.1" placeholder="82.4" />
+          </label>
+          <label>
+            Pas (cm)
+            <input type="number" name="waist" step="0.1" placeholder="89" />
+          </label>
+          <label>
+            Poznámka
+            <input type="text" name="note" placeholder="energie lepší, víc kroků" />
+          </label>
+          <button class="btn" type="submit">Uložit progres</button>
+        </form>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Datum</th>
+                <th>Váha</th>
+                <th>Pas</th>
+                <th>Poznámka</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="progressTableBody"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="card">
+        <div class="card-header">
+          <h2>Databáze cviků</h2>
+          <p>Přidej si vlastní cviky, filtruj podle partie a typu.</p>
+        </div>
+
+        <form id="exerciseForm" class="form-grid exercise-form">
+          <label>
+            Název cviku
+            <input type="text" name="name" required placeholder="Dřep s osou" />
+          </label>
+          <label>
+            Partie
+            <select name="group" required>
+              <option value="">Vyber</option>
+              <option>Celé tělo</option>
+              <option>Nohy</option>
+              <option>Záda</option>
+              <option>Hrudník</option>
+              <option>Ramena</option>
+              <option>Core</option>
+              <option>Kardio</option>
+            </select>
+          </label>
+          <label>
+            Typ
+            <select name="type" required>
+              <option value="">Vyber</option>
+              <option>Silový</option>
+              <option>Kardio</option>
+              <option>Mobilita</option>
+            </select>
+          </label>
+          <label>
+            Poznámka
+            <input type="text" name="note" placeholder="3×8–10" />
+          </label>
+          <button class="btn" type="submit">Přidat cvik</button>
+        </form>
+
+        <label class="filter-label">
+          Filtrovat:
+          <select id="exerciseFilter">
+            <option value="all">Vše</option>
+            <option value="Silový">Silový</option>
+            <option value="Kardio">Kardio</option>
+            <option value="Mobilita">Mobilita</option>
+          </select>
+        </label>
+
+        <div class="chips" id="exerciseChips"></div>
+      </section>
+
+      <section class="card">
+        <div class="card-header">
+          <h2>Tréninkový plán · Fullbody A/B</h2>
+          <p>Jednoduchý základ: střídej trénink A a B během týdne.</p>
+        </div>
+
+        <div class="plan-grid">
+          <article class="plan-box">
+            <h3>Trénink A</h3>
             <ul>
-              <li>Přehledné volné termíny 24/7</li>
-              <li>Okamžité potvrzení rezervace</li>
-              <li>Automatické připomínky, aby jste nezapomněli na návštěvu</li>
-              <li>Jednoduché a rychlé ovládání</li>
+              <li>Dřep / leg press · 4×6–10</li>
+              <li>Bench press / kliky · 4×6–10</li>
+              <li>Přítahy v předklonu · 4×8–12</li>
+              <li>Rumunský mrtvý tah · 3×8–10</li>
+              <li>Core (plank) · 3 série</li>
             </ul>
-            <p style="margin-top: 14px">Starostlivost o váš úsměv ještě nikdy nebyla pohodlnější.</p>
-            <a class="button" style="margin-top: 16px" href="https://xdent.cz/galaxy-dent" target="_blank" rel="noreferrer"
-              >Objednejte se online už dnes</a
-            >
-          </div>
-        </div>
-      </section>
+            <button class="btn ghost plan-done" data-plan="A">Označit A jako splněno</button>
+          </article>
 
-      <section id="reference" class="section testimonials">
-        <div class="section-header">
-          <h2>O ordinaci</h2>
-          <p>
-            Naším cílem je, abyste se k nám vraceli s radostí a odcházeli se zářivým a zdravým úsměvem.
-          </p>
-        </div>
-        <div class="cards">
-          <article class="card">
-            <p>
-              Ordinace je nově zrekonstruovaná, moderní a přímo v srdci města Olomouc. Důraz klademe na
-              bezbolestné ošetření a individuální přístup.
-            </p>
-            <strong>GALAXY DENT s.r.o.</strong>
-          </article>
-          <article class="card">
-            <p>
-              Poskytujeme preventivní i komplexní estetická řešení. O postupu léčby vždy otevřeně
-              diskutujeme a rozhodujete společně s námi.
-            </p>
-            <strong>Na vašem úsměvu záleží!</strong>
-          </article>
-          <article class="card">
-            <p>
-              Fotogalerie bude doplněna (vstup ze dvora, čekárna, ordinace, pracovní tým).
-            </p>
-            <strong>Brzy přidáme fotografie</strong>
+          <article class="plan-box">
+            <h3>Trénink B</h3>
+            <ul>
+              <li>Mrtvý tah / hip hinge · 3×5–8</li>
+              <li>Tlak nad hlavu · 4×6–10</li>
+              <li>Stahování kladky / shyb · 4×8–12</li>
+              <li>Výpady · 3×8–12 na nohu</li>
+              <li>Farmer walk / core · 3 série</li>
+            </ul>
+            <button class="btn ghost plan-done" data-plan="B">Označit B jako splněno</button>
           </article>
         </div>
-      </section>
 
-      <section class="section faq">
-        <div class="section-header">
-          <h2>Fotogalerie (připravujeme)</h2>
-          <p>Níže jsou dočasné zástupné položky podle požadovaných kategorií.</p>
-        </div>
-        <div class="cards">
-          <article class="card"><h3>Vstup ze dvora</h3></article>
-          <article class="card"><h3>Čekárna</h3></article>
-          <article class="card"><h3>Ordinace</h3></article>
-          <article class="card"><h3>Pracovní tým</h3></article>
-        </div>
-      </section>
-
-      <section id="kontakt" class="section contact">
-        <div class="contact-grid">
-          <div>
-            <h2>Kde nás najdete</h2>
-            <p>GALAXY DENT s.r.o.</p>
-            <div class="contact-info">
-              <div>
-                <span>Adresa</span>
-                <strong>1. máje 830/12, 779 00 Olomouc</strong>
-              </div>
-              <div>
-                <span>Telefon</span>
-                <strong><a href="tel:+420727825207">+420 727 825 207</a></strong>
-              </div>
-              <div>
-                <span>E-mail</span>
-                <strong><a href="mailto:galaxydent_sro@gmail.com">galaxydent_sro@gmail.com</a></strong>
-              </div>
-              <div>
-                <span>Instagram</span>
-                <strong>@galaxydent_sro</strong>
-              </div>
-              <div>
-                <span>Facebook</span>
-                <strong>Galaxy Dent sro</strong>
-              </div>
-            </div>
-            <div class="contact-hours">
-              <h4>Ordinační doba</h4>
-              <p>Po 7:30–16:00 · Út 7:30–13:00 · St 7:30–16:00 · Čt 7:30–16:00 · Pá 7:30–16:00</p>
-            </div>
-          </div>
-          <form class="contact-form">
-            <label>
-              Jméno a příjmení
-              <input type="text" placeholder="Jan Novák" />
-            </label>
-            <label>
-              Telefon
-              <input type="tel" placeholder="+420 727 825 207" />
-            </label>
-            <label>
-              E-mail
-              <input type="email" placeholder="jan@email.cz" />
-            </label>
-            <label>
-              S čím potřebujete pomoci?
-              <textarea placeholder="Napište nám, s čím vám můžeme pomoci"></textarea>
-            </label>
-            <button class="button" type="submit">Odeslat poptávku</button>
-            <p class="form-note">Odesláním souhlasíte se zpracováním osobních údajů.</p>
-          </form>
-        </div>
+        <div class="history" id="planHistory"></div>
       </section>
     </main>
 
-    <footer class="footer">
-      <div>
-        <h3>GALAXY DENT s.r.o.</h3>
-        <p>Zubní ordinace Olomouc.</p>
-      </div>
-      <div>
-        <h4>Rychlé odkazy</h4>
-        <a href="#sluzby">Služby</a>
-        <a href="#tym">Tým</a>
-        <a href="#kontakt">Kontakt</a>
-      </div>
-      <div>
-        <h4>Sledujte nás</h4>
-        <a href="https://instagram.com/galaxydent_sro" target="_blank" rel="noreferrer">Instagram</a>
-        <a href="#" aria-disabled="true">Facebook: Galaxy Dent sro</a>
-      </div>
-      <div>
-        <h4>Online rezervace</h4>
-        <p>Objednávací systém bude propojen s programem X-Dent v ordinaci.</p>
-        <a class="button small" href="https://xdent.cz/galaxy-dent" target="_blank" rel="noreferrer">Rezervovat termín</a>
-      </div>
+    <footer class="wrap footer">
+      <p>Tip: ten cíl 3× silový + 2× kardio je super minimum pro většinu lidí — rozumný balans progresu a regenerace.</p>
     </footer>
 
     <script src="app.js"></script>
