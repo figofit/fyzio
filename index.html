@@ -2,351 +2,155 @@
 <html lang="cs">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>FyzioHelp | Špičková fyzioterapie a rehabilitace</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FIGOFIT | Spolupráce bez chaosu</title>
     <meta
       name="description"
-      content="Moderní fyzioterapeutická klinika s důrazem na rychlou úlevu od bolesti, precizní diagnostiku a dlouhodobý plán bez návratu obtíží."
+      content="Časově ohraničené spolupráce pro nastavení tréninku, režimu a základů stravy bez extrémů a dlouhodobé závislosti na trenérovi."
     />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
   </head>
   <body>
-    <header class="site-header">
-      <nav class="nav">
-        <a class="logo" href="#top">FyzioHelp</a>
-        <div class="nav-links">
-          <a href="#sluzby">Služby</a>
-          <a href="#prubeh">Průběh</a>
-          <a href="#tym">Tým</a>
-          <a href="#reference">Reference</a>
-          <a href="#kontakt" class="button small">Objednat se</a>
-        </div>
-        <button class="burger" aria-label="Otevřít menu" aria-expanded="false">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-      </nav>
+    <header class="hero" id="top">
+      <p class="rating">★★★★★ 5.0/5 (18 recenzí na Google)</p>
+      <h1>Silné, funkční tělo bez chaosu.</h1>
+      <p>
+        Systém tréninku + režim + základy stravy, co funguje i v normálním týdnu.
+        Tato sekce je určena pro lidi, kteří chtějí nastavit pohyb smysluplně bez
+        dlouhodobé závislosti na trenérovi.
+      </p>
+      <a class="cta" href="#produkty">👉 Vyber si spolupráci níže</a>
+      <ul class="for-whom">
+        <li>Pro lidi bez systému (začínáš pořád dokola)</li>
+        <li>Pro vytížené (plán musí sedět do týdne)</li>
+        <li>Pro ty, co chtějí výsledky bez extrémů</li>
+      </ul>
+      <small>Online koučink je bez osobních setkání. Start/Intenziv jsou osobně v Olomouci.</small>
     </header>
 
-    <main id="top">
-      <section class="hero">
-        <div class="hero-content">
-          <p class="eyebrow">FyzioHelp · fyzioterapie &amp; rehabilitace</p>
-          <h1>Rychlá úleva od bolesti díky moderní diagnostice a osobnímu plánu.</h1>
-          <p class="lead">
-            V klinice FyzioHelp kombinujeme manuální terapii, pohybovou diagnostiku a chytré cvičení.
-            Výsledky měříme, plán průběžně upravujeme a pacient se vrací do formy bezpečně.
-          </p>
-          <div class="hero-actions">
-            <a class="button" href="#kontakt">Chci konzultaci</a>
-            <a class="button ghost" href="#sluzby">Zobrazit služby</a>
-          </div>
-          <div class="hero-stats">
-            <div>
-              <h3>12+ let</h3>
-              <p>odborné praxe</p>
-            </div>
-            <div>
-              <h3>4,9/5</h3>
-              <p>hodnocení klientů</p>
-            </div>
-            <div>
-              <h3>1 200+</h3>
-              <p>spokojených pacientů</p>
-            </div>
-          </div>
-        </div>
-        <div class="hero-visual">
-          <div class="hero-card">
-            <div class="hero-card-top">
-              <p class="badge">Novinka</p>
-              <h2>Vstupní pohybová diagnostika</h2>
-              <p>
-                60 minut detailního vyšetření, video analýza pohybu a plán s jasnými kroky.
-              </p>
-            </div>
-            <div class="hero-card-bottom">
-              <div>
-                <p>První termín</p>
-                <strong>do 7 dnů</strong>
-              </div>
-              <a class="button small" href="#kontakt">Rezervovat</a>
-            </div>
-          </div>
-          <div class="hero-metric">
-            <h4>Personalizovaný plán</h4>
-            <p>Každý klient odchází s jasným programem a mini video-návody.</p>
-          </div>
-        </div>
+    <main>
+      <section class="pillars">
+        <article>
+          <h2>Komplexní přístup</h2>
+          <p>Pohyb, režim a souvislosti. Ne izolované cviky nebo hacky.</p>
+        </article>
+        <article>
+          <h2>Minimalismus & jednoduchost</h2>
+          <p>Žádné zbytečnosti. Jen to, co má reálný přínos.</p>
+        </article>
+        <article>
+          <h2>Udržitelnost</h2>
+          <p>Systém, který zapadne do života. Ne krátkodobý impulz.</p>
+        </article>
+        <article>
+          <h2>Podpora & zpětná vazba</h2>
+          <p>Jasné vedení podle typu produktu. Bez chaosu a přehnaných slibů.</p>
+        </article>
       </section>
 
-      <section class="trust">
-        <div class="trust-grid">
-          <span>Spolupracujeme s</span>
-          <div class="trust-logos">
-            <div>VZP</div>
-            <div>ČPZP</div>
-            <div>OZP</div>
-            <div>Uniqa</div>
-          </div>
-        </div>
-      </section>
+      <section id="produkty" class="products">
+        <h2>Spolupráce</h2>
 
-      <section id="sluzby" class="section services">
-        <div class="section-header">
-          <h2>Služby, které zrychlí vaši cestu bez bolesti</h2>
+        <article class="product-card">
+          <h3>Intenzivní osobní spolupráce – Olomouc (30 dní)</h3>
+          <p class="price">10 000 Kč</p>
           <p>
-            Zaměřujeme se na příčinu, ne jen symptomy. Kombinujeme techniky tak, aby byl výsledek rychlý
-            i dlouhodobý.
+            Časově omezená osobní spolupráce zaměřená na nastavení tréninku,
+            režimu a základů stravy. Pro rychlý start, jasný směr a samostatnost.
           </p>
-        </div>
-        <div class="cards">
-          <article class="card">
-            <h3>Fyzioterapie &amp; rehabilitace</h3>
-            <p>Komplexní péče po úrazech, operacích i při chronických bolestech zad či kloubů.</p>
-            <span>od 1 200 Kč / 60 min</span>
-          </article>
-          <article class="card">
-            <h3>Manuální terapie</h3>
-            <p>Mobilizace kloubů, uvolnění fascií a cílené techniky pro okamžitou úlevu.</p>
-            <span>od 1 100 Kč / 45 min</span>
-          </article>
-          <article class="card">
-            <h3>Sportovní fyzio</h3>
-            <p>Return-to-play program, prevence zranění a biomechanická analýza pro sportovce.</p>
-            <span>od 1 400 Kč / 60 min</span>
-          </article>
-          <article class="card">
-            <h3>Individuální cvičení</h3>
-            <p>Online i offline plán, videonávody a kontrola techniky při každé návštěvě.</p>
-            <span>od 900 Kč / 45 min</span>
-          </article>
-        </div>
+          <ul>
+            <li>5 osobních setkání</li>
+            <li>Tréninkový systém A/B + progrese</li>
+            <li>Online podpora po dobu 30 dní</li>
+          </ul>
+          <div class="cart" data-product="Intenzivní osobní spolupráce">
+            <button class="qty-btn" data-action="minus">−</button>
+            <span class="qty">1</span>
+            <button class="qty-btn" data-action="plus">+</button>
+            <button class="add-btn">Do košíku</button>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <h3>Startovací spolupráce – Olomouc (14 dní)</h3>
+          <p class="price">5 000 Kč</p>
+          <p>
+            Krátká osobní spolupráce pro nastavení systému tréninku, režimu a
+            základů stravy. Cílem je začít správně a pokračovat samostatně.
+          </p>
+          <ul>
+            <li>2× osobní setkání (90 minut)</li>
+            <li>Jednoduchý rozpis tréninku A/B</li>
+            <li>1× online feedback během 14 dní</li>
+          </ul>
+          <div class="cart" data-product="Startovací spolupráce">
+            <button class="qty-btn" data-action="minus">−</button>
+            <span class="qty">1</span>
+            <button class="qty-btn" data-action="plus">+</button>
+            <button class="add-btn">Do košíku</button>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <h3>Online koučink – systém, režim & dohled (8 týdnů)</h3>
+          <p class="price">5 000 Kč</p>
+          <p>
+            Online spolupráce pro začátečníky i pokročilé, kteří chtějí mít jasno
+            v tréninku, stravě i režimu bez osobních setkání.
+          </p>
+          <ul>
+            <li>Asynchronní feedback až 3× týdně</li>
+            <li>Nastavení systému trénink/režim/strava</li>
+            <li>Bez denního hlídání a bez extrémů</li>
+          </ul>
+          <div class="cart" data-product="Online koučink">
+            <button class="qty-btn" data-action="minus">−</button>
+            <span class="qty">1</span>
+            <button class="qty-btn" data-action="plus">+</button>
+            <button class="add-btn">Do košíku</button>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <h3>Úvodní online konzultace (30–45 min)</h3>
+          <p class="price">1 000 Kč</p>
+          <p>
+            Jednorázová Google Meet konzultace pro rychlé zhodnocení situace,
+            cílů a vhodného dalšího postupu.
+          </p>
+          <ul>
+            <li>Diagnostika aktuálního stavu a omezení</li>
+            <li>Jasné doporučení dalšího směru</li>
+            <li>Po objednání domluva termínu e-mailem</li>
+          </ul>
+          <div class="cart" data-product="Úvodní online konzultace">
+            <button class="qty-btn" data-action="minus">−</button>
+            <span class="qty">1</span>
+            <button class="qty-btn" data-action="plus">+</button>
+            <button class="add-btn">Do košíku</button>
+          </div>
+        </article>
       </section>
 
-      <section id="prubeh" class="section process">
-        <div class="section-header">
-          <h2>Jak probíhá spolupráce krok za krokem</h2>
-          <p>Vše jasné, transparentní a v tempu, které zvládnete.</p>
-        </div>
-        <div class="process-grid">
-          <div class="process-step">
-            <h3>1. Rychlé objednání</h3>
-            <p>Vyplníte krátký formulář, do 24 hodin dostanete návrh termínu.</p>
-          </div>
-          <div class="process-step">
-            <h3>2. Diagnostika</h3>
-            <p>Detailní vyšetření pohybu, svalů a kloubů včetně video-analýzy.</p>
-          </div>
-          <div class="process-step">
-            <h3>3. Plán a terapie</h3>
-            <p>Manuální techniky + individuální cvičení s jasnými cíli.</p>
-          </div>
-          <div class="process-step">
-            <h3>4. Kontrola výsledků</h3>
-            <p>Pravidelné měření pokroku, úprava plánu a prevence návratu bolesti.</p>
-          </div>
-        </div>
-      </section>
-
-      <section id="tym" class="section team">
-        <div class="section-header">
-          <h2>Specialisté, kteří vás vrátí do formy</h2>
-          <p>Tým zkušených fyzioterapeutů s praxí v klinickém i sportovním prostředí.</p>
-        </div>
-        <div class="cards">
-          <article class="card profile">
-            <div class="profile-badge">MSc.</div>
-            <h3>Mgr. Petra Novotná</h3>
-            <p>Zakladatelka kliniky · 12 let praxe</p>
-            <span>Manuální terapie · SM systém · Pilates</span>
-          </article>
-          <article class="card profile">
-            <div class="profile-badge">BC.</div>
-            <h3>Bc. Adam Hrubý</h3>
-            <p>Specialista na sportovní zranění</p>
-            <span>Diagnostika · Return-to-play · Kineziotaping</span>
-          </article>
-          <article class="card profile">
-            <div class="profile-badge">PhDr.</div>
-            <h3>PhDr. Jana Lišková</h3>
-            <p>Rehabilitace po operacích</p>
-            <span>Neurologie · Rehabilitace · Psychomotorika</span>
-          </article>
-        </div>
-      </section>
-
-      <section class="section results">
-        <div class="results-grid">
-          <div>
-            <h2>Výsledky, které jsou vidět</h2>
-            <p>
-              Pracujeme s daty: v průměru do 5 návštěv cítí klienti výraznou úlevu a do 8 návštěv se
-              vrací k plnému pohybu.
-            </p>
-            <div class="results-metrics">
-              <div>
-                <h3>+62%</h3>
-                <p>zlepšení mobility</p>
-              </div>
-              <div>
-                <h3>-74%</h3>
-                <p>pokles bolesti</p>
-              </div>
-              <div>
-                <h3>95%</h3>
-                <p>klientů by nás doporučilo</p>
-              </div>
-            </div>
-          </div>
-          <div class="results-card">
-            <h3>Program "Bez bolesti"</h3>
-            <p>
-              Intenzivní plán pro klienty s dlouhodobými obtížemi. Kombinujeme terapii, cvičení a
-              podporu mezi návštěvami.
-            </p>
-            <ul>
-              <li>1× vstupní diagnostika zdarma</li>
-              <li>Online video-knihovna cviků</li>
-              <li>Pravidelné konzultace s fyzioterapeutem</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <section id="reference" class="section testimonials">
-        <div class="section-header">
-          <h2>Reference, které mluví za nás</h2>
-          <p>Reálné příběhy lidí, kteří se vrátili k pohybu bez bolesti.</p>
-        </div>
-        <div class="cards">
-          <article class="card">
-            <p>
-              „Po operaci kolene jsem se díky týmu FyzioHelp vrátila ke běhu za 3 měsíce. Perfektní
-              vedení a podpora.“
-            </p>
-            <strong>Iveta K.</strong>
-          </article>
-          <article class="card">
-            <p>
-              „Trpěl jsem dlouhodobou bolestí zad. Po 5 návštěvách cítím obrovskou úlevu a konečně
-              zase spím.“
-            </p>
-            <strong>Martin S.</strong>
-          </article>
-          <article class="card">
-            <p>
-              „Skvělá kombinace manuální terapie a cvičení na doma. Díky aplikaci přesně vím, co
-              dělat.“
-            </p>
-            <strong>Lenka D.</strong>
-          </article>
-        </div>
-      </section>
-
-      <section class="section faq">
-        <div class="section-header">
-          <h2>Nejčastější otázky</h2>
-          <p>Vše, co potřebujete vědět před první návštěvou.</p>
-        </div>
-        <div class="faq-grid">
-          <details>
-            <summary>Jak rychle se mohu objednat?</summary>
-            <p>První konzultaci nabízíme obvykle do 7 dnů, případně i dříve podle kapacity.</p>
-          </details>
-          <details>
-            <summary>Co si vzít s sebou?</summary>
-            <p>Komfortní oblečení na cvičení, případně zprávy od lékaře nebo výsledky vyšetření.</p>
-          </details>
-          <details>
-            <summary>Je možné hradit pojišťovnou?</summary>
-            <p>Spolupracujeme s vybranými pojišťovnami, rádi vám poradíme během objednávky.</p>
-          </details>
-          <details>
-            <summary>Nabízíte i online konzultace?</summary>
-            <p>Ano, nabízíme rychlé online konzultace a kontrolu cvičení formou videohovoru.</p>
-          </details>
-        </div>
-      </section>
-
-      <section id="kontakt" class="section contact">
-        <div class="contact-grid">
-          <div>
-            <h2>Objednejte se během 2 minut</h2>
-            <p>
-              Vyplňte formulář a náš tým se vám ozve s nejbližším termínem. Nebo zavolejte rovnou.
-            </p>
-            <div class="contact-info">
-              <div>
-                <span>Telefon</span>
-                <strong>+420 777 888 999</strong>
-              </div>
-              <div>
-                <span>E-mail</span>
-                <strong>info@fyziohelp.cz</strong>
-              </div>
-              <div>
-                <span>Adresa</span>
-                <strong>Praha 4 · Na Pankráci 12</strong>
-              </div>
-            </div>
-            <div class="contact-hours">
-              <h4>Otevírací doba</h4>
-              <p>Po–Pá 8:00–19:00 · So 9:00–13:00</p>
-            </div>
-          </div>
-          <form class="contact-form">
-            <label>
-              Jméno a příjmení
-              <input type="text" placeholder="Jan Novák" />
-            </label>
-            <label>
-              Telefon
-              <input type="tel" placeholder="+420 777 888 999" />
-            </label>
-            <label>
-              E-mail
-              <input type="email" placeholder="jan@email.cz" />
-            </label>
-            <label>
-              S čím potřebujete pomoci?
-              <textarea placeholder="Popište svůj problém"></textarea>
-            </label>
-            <button class="button" type="submit">Odeslat poptávku</button>
-            <p class="form-note">Odesláním souhlasíte se zpracováním osobních údajů.</p>
-          </form>
-        </div>
+      <section class="blog">
+        <p class="meta">FIGOFIT / BLOG · 17.1.2026</p>
+        <h2>Jak začít cvičit, když nemáš čas (a nechceš extrémy)</h2>
+        <p>
+          Nemáš čas, nechceš 6 tréninků týdně ani „jet 100 % nebo nic“.
+          Potřebuješ systém, který se vejde do normálního života. Základ:
+          konzistence > dokonalost.
+        </p>
+        <ol>
+          <li>Hlavně začni. Nečekej na ideální týden.</li>
+          <li>Udržitelnost je král. Systém musí přežít i horší týden.</li>
+          <li>Komplexní cviky = maximum efektu za minimum času.</li>
+          <li>2× týdně celý rok porazí 5× týdně na dva týdny.</li>
+        </ol>
       </section>
     </main>
 
-    <footer class="footer">
-      <div>
-        <h3>FyzioHelp</h3>
-        <p>Moderní klinika fyzioterapie a rehabilitace.</p>
-      </div>
-      <div>
-        <h4>Rychlé odkazy</h4>
-        <a href="#sluzby">Služby</a>
-        <a href="#prubeh">Průběh</a>
-        <a href="#kontakt">Kontakt</a>
-      </div>
-      <div>
-        <h4>Sledujte nás</h4>
-        <a href="https://instagram.com">Instagram</a>
-        <a href="https://facebook.com">Facebook</a>
-      </div>
-      <div>
-        <h4>Novinky</h4>
-        <p>Jednou měsíčně tipy pro zdravý pohyb.</p>
-        <button class="button small">Přihlásit se</button>
-      </div>
+    <footer>
+      <p>Neprodávám extrémy. Prodávám systém, který vydrží.</p>
     </footer>
 
     <script src="app.js"></script>

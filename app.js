@@ -1,32 +1,23 @@
-const burger = document.querySelector(".burger");
-const navLinks = document.querySelector(".nav-links");
-const header = document.querySelector(".site-header");
+document.querySelectorAll('.cart').forEach((cart) => {
+  const qtyEl = cart.querySelector('.qty');
+  const productName = cart.dataset.product;
 
-if (burger && navLinks) {
-  burger.addEventListener("click", () => {
-    const isOpen = navLinks.classList.toggle("open");
-    burger.setAttribute("aria-expanded", isOpen);
-  });
+  cart.querySelectorAll('.qty-btn').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const action = btn.dataset.action;
+      const current = Number(qtyEl.textContent);
 
-  navLinks.querySelectorAll("a").forEach((link) => {
-    link.addEventListener("click", () => {
-      navLinks.classList.remove("open");
-      burger.setAttribute("aria-expanded", "false");
+      if (action === 'plus') {
+        qtyEl.textContent = String(current + 1);
+        return;
+      }
+
+      qtyEl.textContent = String(Math.max(1, current - 1));
     });
   });
-}
 
-document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-  anchor.addEventListener("click", (event) => {
-    const target = document.querySelector(anchor.getAttribute("href"));
-    if (target) {
-      event.preventDefault();
-      target.scrollIntoView({ behavior: "smooth" });
-    }
+  cart.querySelector('.add-btn').addEventListener('click', () => {
+    const qty = qtyEl.textContent;
+    alert(`Do košíku přidáno: ${productName} (${qty}×)`);
   });
-});
-
-window.addEventListener("scroll", () => {
-  if (!header) return;
-  header.classList.toggle("scrolled", window.scrollY > 12);
 });
