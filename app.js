@@ -1,34 +1,13 @@
-const burger = document.querySelector('.burger');
-const navLinks = document.querySelector('.nav-links');
-
-if (burger && navLinks) {
-  burger.addEventListener('click', () => {
-    const isOpen = navLinks.classList.toggle('open');
-    burger.setAttribute('aria-expanded', String(isOpen));
-  });
+const yearNode = document.getElementById('year');
+if (yearNode) {
+  yearNode.textContent = String(new Date().getFullYear());
 }
 
-const dropdown = document.querySelector('.dropdown');
-const toggle = document.querySelector('.dropdown-toggle');
-if (dropdown && toggle) {
-  toggle.addEventListener('click', () => {
-    const isOpen = dropdown.classList.toggle('open');
-    toggle.setAttribute('aria-expanded', String(isOpen));
-  });
-  document.addEventListener('click', (event) => {
-    if (!dropdown.contains(event.target)) {
-      dropdown.classList.remove('open');
-      toggle.setAttribute('aria-expanded', 'false');
-    }
+const navToggle = document.getElementById('navToggle');
+if (navToggle) {
+  document.querySelectorAll('.nav a').forEach((link) => {
+    link.addEventListener('click', () => {
+      navToggle.checked = false;
+    });
   });
 }
-
-document.querySelectorAll('a[href^="#"]').forEach((link) => {
-  link.addEventListener('click', (event) => {
-    const target = document.querySelector(link.getAttribute('href'));
-    if (target) {
-      event.preventDefault();
-      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
-  });
-});

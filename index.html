@@ -1,198 +1,181 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="cs">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>ScreensON | Digitální obrazovky a správa obsahu ve ScreenSoftu</title>
     <meta
       name="description"
-      content="Dodáme obrazovky, software ScreenSoft a servis. Řešení pro obce, školy, obchod, hotely, restaurace i nemocnice."
+      content="ScreensON – digitální obrazovky, software ScreenSoft a servis. Řešení pro obce, školy, obchod, hotely, restaurace i nemocnice."
     />
+    <title>ScreensON | Digitální obrazovky + ScreenSoft + servis</title>
     <link rel="stylesheet" href="styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
   </head>
   <body>
+    <a class="skip" href="#main">Přeskočit na obsah</a>
+
     <header class="site-header">
-      <nav class="nav wrap">
-        <a class="logo" href="index.html">ScreensON</a>
-        <button class="burger" aria-label="Otevřít menu" aria-expanded="false">☰</button>
-        <div class="nav-links">
-          <div class="dropdown">
-            <button class="dropdown-toggle" aria-expanded="false">Řešení</button>
-            <div class="dropdown-menu">
-              <a href="obce.html">Obce</a>
-              <a href="vzdelavani.html">Vzdělávání</a>
-              <a href="obchod.html">Obchod</a>
-              <a href="hotely.html">Hotely</a>
-              <a href="restaurace.html">Restaurace</a>
-              <a href="nemocnice.html">Nemocnice</a>
-              <a href="ostatni.html">Ostatní</a>
-            </div>
+      <div class="container nav-wrap">
+        <a class="brand" href="index.html" aria-label="ScreensON domů">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-text">screens<span>ON</span></span>
+        </a>
+
+        <input class="nav-toggle" type="checkbox" id="navToggle" aria-label="Otevřít menu" />
+        <label class="nav-burger" for="navToggle" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </label>
+
+        <nav class="nav" aria-label="Hlavní navigace">
+          <ul class="nav-list">
+            <li class="nav-item has-dropdown">
+              <a class="nav-link" href="#reseni">Řešení</a>
+              <div class="dropdown" aria-label="Podmenu Řešení">
+                <a href="obce.html">Obce</a>
+                <a href="vzdelavani.html">Vzdělávání</a>
+                <a href="obchod.html">Obchod</a>
+                <a href="hotely.html">Hotely</a>
+                <a href="restaurace.html">Restaurace</a>
+                <a href="nemocnice.html">Nemocnice</a>
+                <a href="ostatni.html">Ostatní</a>
+              </div>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="software.html">Software ScreenSoft</a></li>
+            <li class="nav-item"><a class="nav-link" href="servis-sprava.html">Servis &amp; správa</a></li>
+            <li class="nav-item"><a class="nav-link" href="#reference">Reference</a></li>
+            <li class="nav-item"><a class="nav-link" href="#kontakt">Kontakt</a></li>
+          </ul>
+
+          <div class="nav-cta">
+            <a class="btn btn-ghost login-link" href="https://my.screensoft.org" target="_blank" rel="noreferrer">Přihlášení do systému</a>
+            <a class="btn btn-primary" href="#kontakt">Domluvit demo</a>
           </div>
-          <a href="software.html">Software ScreenSoft</a>
-          <a href="servis-sprava.html">Servis &amp; správa</a>
-          <a href="#reference">Reference</a>
-          <a href="#kontakt">Kontakt</a>
-          <a class="button small" href="#kontakt">Nezávazná poptávka</a>
-        </div>
-        <a class="subtle-link" href="https://my.screensoft.org" target="_blank" rel="noreferrer">Přihlášení do systému</a>
-      </nav>
+        </nav>
+      </div>
     </header>
 
-    <main>
-      <section class="hero wrap section-grid">
-        <div>
-          <p class="eyebrow">ScreensON · HW + ScreenSoft + servis</p>
-          <h1>Digitální obrazovky, které prodávají a informují.</h1>
-          <p class="lead">
-            Dodáme obrazovku, nainstalujeme ji a postaráme se o provoz. Obsah spravujete jednoduše ve
-            ScreenSoftu – z jednoho místa pro všechny lokality.
-          </p>
-          <div class="actions">
-            <a class="button" href="#kontakt">Domluvit demo</a>
-            <a class="button ghost" href="#kontakt">Chci nabídku</a>
-          </div>
-          <div class="benefits-inline">
-            <span>Instalace a spuštění bez starostí</span>
-            <span>Správa obsahu na pár kliknutí</span>
-            <span>Servis a dohled nad provozem</span>
-          </div>
-        </div>
-        <div class="device-mockup">
-          <div class="screen"></div>
-          <p>Ukázka obrazovky / 6–12s loop video</p>
-        </div>
-      </section>
-
-      <section class="wrap trust">
-        <h2>Funguje to v praxi. Každý den.</h2>
-        <div class="stats-grid">
-          <article><h3>600+</h3><p>aktivních instalací</p></article>
-          <article><h3>95%</h3><p>obnovených spoluprací</p></article>
-          <article><h3>24/7</h3><p>monitoring provozu</p></article>
-          <article><p>„Od jedné obrazovky až po síť poboček. Spolehlivě.“</p></article>
-        </div>
-      </section>
-
-      <section class="wrap section" id="pilire">
-        <h2>Kompletní řešení: obrazovky + software + servis</h2>
-        <div class="cards three">
-          <article class="card">
-            <h3>Obrazovky</h3>
-            <ul>
-              <li>Výběr formátu, jasu a umístění podle prostoru.</li>
-              <li>Instalace a spuštění bez komplikací.</li>
+    <main id="main">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="kicker">Digitální signage • Kiosky • Sítě poboček</p>
+            <h1>Digitální obrazovky, které prodávají a informují.</h1>
+            <p class="lead">
+              Dodáme obrazovku, nainstalujeme ji a postaráme se o provoz. Obsah spravujete jednoduše ve
+              <strong>ScreenSoftu</strong> – z jednoho místa pro všechny lokality.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary btn-lg" href="#kontakt">Domluvit demo</a>
+              <a class="btn btn-ghost btn-lg" href="#kontakt">Nezávazná poptávka</a>
+            </div>
+            <ul class="hero-bullets">
+              <li>Instalace a spuštění bez starostí</li>
+              <li>Správa obsahu na pár kliknutí</li>
+              <li>Servis a dohled nad provozem</li>
             </ul>
-          </article>
-          <article class="card">
-            <h3>ScreenSoft</h3>
-            <ul>
-              <li>Správa kampaní, aplikací a obsahu pro 1 i 100 lokalit.</li>
-              <li>Plánování a cílení obsahu podle zařízení.</li>
-            </ul>
-          </article>
-          <article class="card">
-            <h3>Servis &amp; správa</h3>
-            <ul>
-              <li>Monitoring, hotline, pravidelná údržba.</li>
-              <li>Možnost kompletní správy obsahu na klíč.</li>
-            </ul>
-          </article>
-        </div>
-      </section>
+          </div>
 
-      <section class="wrap section" id="reseni">
-        <h2>Vyberte, pro co ScreensON využijete</h2>
-        <p class="section-lead">Každý segment má jiné cíle – my dodáme sestavu i obsahové šablony.</p>
-        <div class="cards solution-grid">
-          <a class="card" href="obce.html"><h3>Obce</h3><p>Informace občanům přehledně a kdykoliv aktuálně.</p><span>Zjistit víc</span></a>
-          <a class="card" href="vzdelavani.html"><h3>Vzdělávání</h3><p>Sdělení pro rodiče i hravý interaktivní obsah.</p><span>Zjistit víc</span></a>
-          <a class="card" href="obchod.html"><h3>Obchod</h3><p>Kampaně, katalogy a engagement na prodejně.</p><span>Zjistit víc</span></a>
-          <a class="card" href="hotely.html"><h3>Hotely</h3><p>Služby, navigace a upsell v lobby i na eventech.</p><span>Zjistit víc</span></a>
-          <a class="card" href="restaurace.html"><h3>Restaurace</h3><p>Menu a promo, které zaujme od vstupu po stůl.</p><span>Zjistit víc</span></a>
-          <a class="card" href="nemocnice.html"><h3>Nemocnice</h3><p>Navigace a informace pro pacienty bez stresu.</p><span>Zjistit víc</span></a>
-          <a class="card" href="servis-sprava.html"><h3>Servis / Správa</h3><p>Monitoring, pravidelná péče a reporting.</p><span>Zjistit víc</span></a>
-          <a class="card" href="ostatni.html"><h3>Ostatní</h3><p>Továrny, posilovny, dopravní uzly… řešení na míru.</p><span>Zjistit víc</span></a>
-        </div>
-      </section>
-
-      <section class="section alt">
-        <div class="wrap">
-          <h2>Od nápadu ke spuštěné obrazovce během pár kroků</h2>
-          <div class="steps">
-            <article><strong>1.</strong><p>Konzultace a návrh</p></article>
-            <article><strong>2.</strong><p>Instalace &amp; spuštění</p></article>
-            <article><strong>3.</strong><p>Obsah &amp; správa v ScreenSoft</p></article>
-            <article><strong>4.</strong><p>Servis a rozvoj</p></article>
+          <div class="hero-media" aria-label="Ukázka obrazovky">
+            <div class="device">
+              <div class="device-topbar"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+              <div class="device-screen">
+                <div class="mock-ui">
+                  <div class="mock-card"><div class="mock-title"></div><div class="mock-lines"><span></span><span></span><span></span></div></div>
+                  <div class="mock-card"><div class="mock-title"></div><div class="mock-lines"><span></span><span></span><span></span></div></div>
+                  <div class="mock-strip"><span></span><span></span><span></span><span></span></div>
+                </div>
+                <div class="glow" aria-hidden="true"></div>
+              </div>
+            </div>
+            <div class="media-note"><span class="badge">Live</span><span>Ukázka rozhraní / prezentace obsahu</span></div>
           </div>
         </div>
       </section>
 
-      <section class="wrap section teaser">
-        <h2>ScreenSoft pracuje ve 2 vrstvách obsahu</h2>
-        <p>
-          Prezentační vrstva běží pasivně (reklamy, oznámení), aplikační vrstva je interaktivní (menu,
-          dokumenty, ankety). Po nečinnosti se systém vrací zpět.
-        </p>
-        <a class="button" href="software.html">Prohlédnout ScreenSoft</a>
-      </section>
-
-      <section class="wrap section" id="reference">
-        <h2>Ukázky z praxe</h2>
-        <div class="carousel">
-          <article class="card"><h3>Město Beroun</h3><p>Rozcestníky a úřední informace na 65" ve vstupu.</p></article>
-          <article class="card"><h3>Retail park Alfa</h3><p>Promo kampaně s cílením dle prodejen.</p></article>
-          <article class="card"><h3>Hotel NEX</h3><p>Event wall 86" + digitální štítky sálů.</p></article>
+      <section class="proof">
+        <div class="container">
+          <div class="proof-head">
+            <h2>Funguje to v praxi. Každý den.</h2>
+            <p>Od jedné obrazovky až po síť poboček. Obsah řídíte centrálně a bezpečně.</p>
+          </div>
+          <div class="proof-row">
+            <div class="pill"><span class="pill-ico">✓</span><span>Rychlé nasazení</span></div>
+            <div class="pill"><span class="pill-ico">✓</span><span>Řízení kampaní a cílení</span></div>
+            <div class="pill"><span class="pill-ico">✓</span><span>Servis, výměny, dohled</span></div>
+          </div>
+          <div class="logo-row"><span class="logo-chip">Klient A</span><span class="logo-chip">Klient B</span><span class="logo-chip">Klient C</span><span class="logo-chip">Klient D</span></div>
         </div>
       </section>
 
-      <section class="section alt">
-        <div class="wrap">
-          <h2>Vyberte si, kolik práce chcete řešit</h2>
-          <div class="cards three">
-            <article class="card"><h3>Start</h3><p>1–2 obrazovky, základní nastavení, rychlé spuštění.</p></article>
-            <article class="card"><h3>Pro</h3><p>Více lokalit, cílení obsahu, pokročilé kampaně.</p></article>
-            <article class="card"><h3>Full Service</h3><p>Monitoring, servis i správa obsahu na klíč.</p></article>
+      <section class="section">
+        <div class="container">
+          <div class="section-head"><h2>Kompletní řešení: obrazovky + software + servis</h2><p>Jeden partner od návrhu po provoz.</p></div>
+          <div class="grid3">
+            <article class="card"><div class="card-ico">📺</div><h3>Obrazovky</h3><p>Vybereme vhodný formát, jas i umístění. Dodáme a nainstalujeme.</p></article>
+            <article class="card"><div class="card-ico">🧠</div><h3>Software ScreenSoft</h3><p>Správa kampaní, aplikací a obsahu – pro jednu i desítky lokalit.</p></article>
+            <article class="card"><div class="card-ico">🛠️</div><h3>Servis &amp; správa</h3><p>Monitoring, údržba, výjezdy i správa obsahu na klíč.</p></article>
           </div>
-          <a class="button" href="#kontakt">Získat nabídku</a>
         </div>
       </section>
 
-      <section class="wrap section faq">
-        <h2>FAQ</h2>
-        <details><summary>Jak rychle umíte dodat a nainstalovat?</summary><p>Typicky 2–4 týdny dle složitosti projektu.</p></details>
-        <details><summary>Zvládneme spravovat obsah sami?</summary><p>Ano, ScreenSoft je navržený i pro běžné uživatele.</p></details>
-        <details><summary>Kolik lokalit můžeme mít pod jedním účtem?</summary><p>Od jedné po desítky lokalit s oddělenými právy.</p></details>
-        <details><summary>Co když se obrazovka porouchá?</summary><p>Řešíme hotline, monitoring a servisní zásah dle balíčku.</p></details>
-        <details><summary>Umíte i interaktivní režim?</summary><p>Ano, včetně návratu do prezentační smyčky po nečinnosti.</p></details>
-        <details><summary>Je možné řešit reklamu i komerční pronájmy?</summary><p>Ano, kampaně lze rozdělit na komerční i nekomerční obsah.</p></details>
+      <section class="section section-soft" id="reseni">
+        <div class="container">
+          <div class="section-head"><h2>Vyberte, pro co ScreensON využijete</h2><p>Každý segment má jiné cíle – dodáme vhodnou sestavu i obsah.</p></div>
+          <div class="grid-cards">
+            <a class="tile" href="obce.html"><div class="tile-top"><span class="tile-ico">🏛️</span><span class="tile-title">Obce</span></div><p>Informace občanům přehledně a kdykoliv aktuálně.</p><span class="tile-cta">Zjistit víc →</span></a>
+            <a class="tile" href="vzdelavani.html"><div class="tile-top"><span class="tile-ico">🎓</span><span class="tile-title">Vzdělávání</span></div><p>Sdělení pro rodiče i hravý interaktivní obsah.</p><span class="tile-cta">Zjistit víc →</span></a>
+            <a class="tile" href="obchod.html"><div class="tile-top"><span class="tile-ico">🛍️</span><span class="tile-title">Obchod</span></div><p>Kampaně, katalogy, interakce. Obsah měníte na dálku.</p><span class="tile-cta">Zjistit víc →</span></a>
+            <a class="tile" href="hotely.html"><div class="tile-top"><span class="tile-ico">🏨</span><span class="tile-title">Hotely</span></div><p>Služby, navigace a upsell v lobby i na eventech.</p><span class="tile-cta">Zjistit víc →</span></a>
+            <a class="tile" href="restaurace.html"><div class="tile-top"><span class="tile-ico">🍽️</span><span class="tile-title">Restaurace</span></div><p>Menu a promo, které zaujme. Od stěny až po stolky.</p><span class="tile-cta">Zjistit víc →</span></a>
+            <a class="tile" href="nemocnice.html"><div class="tile-top"><span class="tile-ico">🏥</span><span class="tile-title">Nemocnice</span></div><p>Navigace a informace pro pacienty. Stabilní provoz.</p><span class="tile-cta">Zjistit víc →</span></a>
+            <a class="tile" href="servis-sprava.html"><div class="tile-top"><span class="tile-ico">🧰</span><span class="tile-title">Servis &amp; správa</span></div><p>Monitoring, údržba i správa obsahu na klíč.</p><span class="tile-cta">Zjistit víc →</span></a>
+            <a class="tile" href="ostatni.html"><div class="tile-top"><span class="tile-ico">⚙️</span><span class="tile-title">Ostatní</span></div><p>Továrny, posilovny, dopravní uzly… řešení přizpůsobíme.</p><span class="tile-cta">Zjistit víc →</span></a>
+          </div>
+        </div>
       </section>
 
-      <section class="final-cta" id="kontakt">
-        <div class="wrap section-grid">
-          <div>
-            <h2>Pošlete nám lokalitu / účel / rozměr – připravíme návrh řešení.</h2>
-            <p>Stačí 3 informace a do 24 hodin máte doporučenou sestavu a další kroky.</p>
+      <section class="section" id="reference">
+        <div class="container">
+          <div class="section-head"><h2>Ukázky a reference</h2><p>Krátké příklady, co obrazovky řeší v praxi.</p></div>
+          <div class="grid-cards">
+            <article class="ref"><div class="ref-img"></div><div class="ref-body"><h3>Obecní úřad</h3><p>Oznámení, úřední informace, akce. Aktualizace na dálku.</p></div></article>
+            <article class="ref"><div class="ref-img"></div><div class="ref-body"><h3>Retail</h3><p>Akce a novinky napříč pobočkami, cílení obsahu.</p></div></article>
+            <article class="ref"><div class="ref-img"></div><div class="ref-body"><h3>Hotel</h3><p>Program, služby, upsell. Profesionální dojem značky.</p></div></article>
           </div>
-          <form class="mini-form">
-            <label>Segment<input type="text" placeholder="Obec / obchod / hotel" /></label>
-            <label>Město<input type="text" placeholder="Praha" /></label>
-            <label>Kontakt<input type="text" placeholder="E-mail nebo telefon" /></label>
-            <button class="button" type="submit">Nezávazná poptávka</button>
+        </div>
+      </section>
+
+      <section class="final" id="kontakt">
+        <div class="container final-grid">
+          <div class="final-copy">
+            <h2>Pošlete nám lokaci a účel. My připravíme návrh.</h2>
+            <p>Stačí 3 informace a do 24 hodin máte doporučenou sestavu a další kroky. Bez závazků.</p>
+            <div class="mini-faq">
+              <details><summary>Jak rychle umíte dodat a nainstalovat?</summary><p>Obvykle 2–4 týdny podle typu řešení a lokality.</p></details>
+              <details><summary>Zvládneme spravovat obsah sami?</summary><p>Ano. ScreenSoft je navržený pro běžné uživatele, nebo to převezmeme za vás.</p></details>
+            </div>
+          </div>
+          <form class="form" action="#" method="post">
+            <div class="form-head"><h3>Nezávazná poptávka</h3><p>Odpovíme nejpozději do 1 pracovního dne.</p></div>
+            <label class="field"><span>Segment</span><select required><option value="" selected disabled>Vyberte…</option><option>Obce</option><option>Vzdělávání</option><option>Obchod</option><option>Hotely</option><option>Restaurace</option><option>Nemocnice</option><option>Ostatní</option></select></label>
+            <label class="field"><span>Město / lokalita</span><input type="text" placeholder="např. Brno – vstupní hala" required /></label>
+            <label class="field"><span>Email</span><input type="email" placeholder="vas@email.cz" required /></label>
+            <button class="btn btn-primary btn-lg full" type="submit">Odeslat</button>
             <p class="form-note">Bez závazků. Bez spamu. Jen konkrétní návrh.</p>
           </form>
         </div>
       </section>
     </main>
 
-    <footer class="footer wrap">
-      <p>© 2026 ScreensON</p>
-      <div><a href="software.html">ScreenSoft</a> · <a href="servis-sprava.html">Servis</a> · <a href="#kontakt">Kontakt</a></div>
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div><div class="brand footer-brand"><span class="brand-mark"></span><span class="brand-text">screens<span>ON</span></span></div><p class="muted">Digitální obrazovky • ScreenSoft • Servis</p></div>
+        <div class="footer-cols">
+          <div class="footer-col"><h4>Řešení</h4><a href="obce.html">Obce</a><a href="vzdelavani.html">Vzdělávání</a><a href="obchod.html">Obchod</a><a href="hotely.html">Hotely</a></div>
+          <div class="footer-col"><h4>Produkty</h4><a href="software.html">Software ScreenSoft</a><a href="servis-sprava.html">Servis & správa</a><a href="#reference">Reference</a></div>
+          <div class="footer-col"><h4>Kontakt</h4><a href="#kontakt">Nezávazná poptávka</a><a href="#kontakt">Domluvit demo</a></div>
+        </div>
+      </div>
+      <div class="container footer-bottom"><span class="muted">© <span id="year"></span> ScreensON</span></div>
     </footer>
 
     <a class="sticky-mini-cta" href="#kontakt">Chci návrh řešení</a>
