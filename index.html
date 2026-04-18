@@ -3,352 +3,199 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>FyzioHelp | Špičková fyzioterapie a rehabilitace</title>
+    <title>ScreensON | Digitální obrazovky a správa obsahu ve ScreenSoftu</title>
     <meta
       name="description"
-      content="Moderní fyzioterapeutická klinika s důrazem na rychlou úlevu od bolesti, precizní diagnostiku a dlouhodobý plán bez návratu obtíží."
+      content="Dodáme obrazovky, software ScreenSoft a servis. Řešení pro obce, školy, obchod, hotely, restaurace i nemocnice."
     />
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
     <header class="site-header">
-      <nav class="nav">
-        <a class="logo" href="#top">FyzioHelp</a>
+      <nav class="nav wrap">
+        <a class="logo" href="index.html">ScreensON</a>
+        <button class="burger" aria-label="Otevřít menu" aria-expanded="false">☰</button>
         <div class="nav-links">
-          <a href="#sluzby">Služby</a>
-          <a href="#prubeh">Průběh</a>
-          <a href="#tym">Tým</a>
+          <div class="dropdown">
+            <button class="dropdown-toggle" aria-expanded="false">Řešení</button>
+            <div class="dropdown-menu">
+              <a href="obce.html">Obce</a>
+              <a href="vzdelavani.html">Vzdělávání</a>
+              <a href="obchod.html">Obchod</a>
+              <a href="hotely.html">Hotely</a>
+              <a href="restaurace.html">Restaurace</a>
+              <a href="nemocnice.html">Nemocnice</a>
+              <a href="ostatni.html">Ostatní</a>
+            </div>
+          </div>
+          <a href="software.html">Software ScreenSoft</a>
+          <a href="servis-sprava.html">Servis &amp; správa</a>
           <a href="#reference">Reference</a>
-          <a href="#kontakt" class="button small">Objednat se</a>
+          <a href="#kontakt">Kontakt</a>
+          <a class="button small" href="#kontakt">Nezávazná poptávka</a>
         </div>
-        <button class="burger" aria-label="Otevřít menu" aria-expanded="false">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
+        <a class="subtle-link" href="https://my.screensoft.org" target="_blank" rel="noreferrer">Přihlášení do systému</a>
       </nav>
     </header>
 
-    <main id="top">
-      <section class="hero">
-        <div class="hero-content">
-          <p class="eyebrow">FyzioHelp · fyzioterapie &amp; rehabilitace</p>
-          <h1>Rychlá úleva od bolesti díky moderní diagnostice a osobnímu plánu.</h1>
+    <main>
+      <section class="hero wrap section-grid">
+        <div>
+          <p class="eyebrow">ScreensON · HW + ScreenSoft + servis</p>
+          <h1>Digitální obrazovky, které prodávají a informují.</h1>
           <p class="lead">
-            V klinice FyzioHelp kombinujeme manuální terapii, pohybovou diagnostiku a chytré cvičení.
-            Výsledky měříme, plán průběžně upravujeme a pacient se vrací do formy bezpečně.
+            Dodáme obrazovku, nainstalujeme ji a postaráme se o provoz. Obsah spravujete jednoduše ve
+            ScreenSoftu – z jednoho místa pro všechny lokality.
           </p>
-          <div class="hero-actions">
-            <a class="button" href="#kontakt">Chci konzultaci</a>
-            <a class="button ghost" href="#sluzby">Zobrazit služby</a>
+          <div class="actions">
+            <a class="button" href="#kontakt">Domluvit demo</a>
+            <a class="button ghost" href="#kontakt">Chci nabídku</a>
           </div>
-          <div class="hero-stats">
-            <div>
-              <h3>12+ let</h3>
-              <p>odborné praxe</p>
-            </div>
-            <div>
-              <h3>4,9/5</h3>
-              <p>hodnocení klientů</p>
-            </div>
-            <div>
-              <h3>1 200+</h3>
-              <p>spokojených pacientů</p>
-            </div>
+          <div class="benefits-inline">
+            <span>Instalace a spuštění bez starostí</span>
+            <span>Správa obsahu na pár kliknutí</span>
+            <span>Servis a dohled nad provozem</span>
           </div>
         </div>
-        <div class="hero-visual">
-          <div class="hero-card">
-            <div class="hero-card-top">
-              <p class="badge">Novinka</p>
-              <h2>Vstupní pohybová diagnostika</h2>
-              <p>
-                60 minut detailního vyšetření, video analýza pohybu a plán s jasnými kroky.
-              </p>
-            </div>
-            <div class="hero-card-bottom">
-              <div>
-                <p>První termín</p>
-                <strong>do 7 dnů</strong>
-              </div>
-              <a class="button small" href="#kontakt">Rezervovat</a>
-            </div>
-          </div>
-          <div class="hero-metric">
-            <h4>Personalizovaný plán</h4>
-            <p>Každý klient odchází s jasným programem a mini video-návody.</p>
-          </div>
+        <div class="device-mockup">
+          <div class="screen"></div>
+          <p>Ukázka obrazovky / 6–12s loop video</p>
         </div>
       </section>
 
-      <section class="trust">
-        <div class="trust-grid">
-          <span>Spolupracujeme s</span>
-          <div class="trust-logos">
-            <div>VZP</div>
-            <div>ČPZP</div>
-            <div>OZP</div>
-            <div>Uniqa</div>
-          </div>
+      <section class="wrap trust">
+        <h2>Funguje to v praxi. Každý den.</h2>
+        <div class="stats-grid">
+          <article><h3>600+</h3><p>aktivních instalací</p></article>
+          <article><h3>95%</h3><p>obnovených spoluprací</p></article>
+          <article><h3>24/7</h3><p>monitoring provozu</p></article>
+          <article><p>„Od jedné obrazovky až po síť poboček. Spolehlivě.“</p></article>
         </div>
       </section>
 
-      <section id="sluzby" class="section services">
-        <div class="section-header">
-          <h2>Služby, které zrychlí vaši cestu bez bolesti</h2>
-          <p>
-            Zaměřujeme se na příčinu, ne jen symptomy. Kombinujeme techniky tak, aby byl výsledek rychlý
-            i dlouhodobý.
-          </p>
-        </div>
-        <div class="cards">
+      <section class="wrap section" id="pilire">
+        <h2>Kompletní řešení: obrazovky + software + servis</h2>
+        <div class="cards three">
           <article class="card">
-            <h3>Fyzioterapie &amp; rehabilitace</h3>
-            <p>Komplexní péče po úrazech, operacích i při chronických bolestech zad či kloubů.</p>
-            <span>od 1 200 Kč / 60 min</span>
-          </article>
-          <article class="card">
-            <h3>Manuální terapie</h3>
-            <p>Mobilizace kloubů, uvolnění fascií a cílené techniky pro okamžitou úlevu.</p>
-            <span>od 1 100 Kč / 45 min</span>
-          </article>
-          <article class="card">
-            <h3>Sportovní fyzio</h3>
-            <p>Return-to-play program, prevence zranění a biomechanická analýza pro sportovce.</p>
-            <span>od 1 400 Kč / 60 min</span>
-          </article>
-          <article class="card">
-            <h3>Individuální cvičení</h3>
-            <p>Online i offline plán, videonávody a kontrola techniky při každé návštěvě.</p>
-            <span>od 900 Kč / 45 min</span>
-          </article>
-        </div>
-      </section>
-
-      <section id="prubeh" class="section process">
-        <div class="section-header">
-          <h2>Jak probíhá spolupráce krok za krokem</h2>
-          <p>Vše jasné, transparentní a v tempu, které zvládnete.</p>
-        </div>
-        <div class="process-grid">
-          <div class="process-step">
-            <h3>1. Rychlé objednání</h3>
-            <p>Vyplníte krátký formulář, do 24 hodin dostanete návrh termínu.</p>
-          </div>
-          <div class="process-step">
-            <h3>2. Diagnostika</h3>
-            <p>Detailní vyšetření pohybu, svalů a kloubů včetně video-analýzy.</p>
-          </div>
-          <div class="process-step">
-            <h3>3. Plán a terapie</h3>
-            <p>Manuální techniky + individuální cvičení s jasnými cíli.</p>
-          </div>
-          <div class="process-step">
-            <h3>4. Kontrola výsledků</h3>
-            <p>Pravidelné měření pokroku, úprava plánu a prevence návratu bolesti.</p>
-          </div>
-        </div>
-      </section>
-
-      <section id="tym" class="section team">
-        <div class="section-header">
-          <h2>Specialisté, kteří vás vrátí do formy</h2>
-          <p>Tým zkušených fyzioterapeutů s praxí v klinickém i sportovním prostředí.</p>
-        </div>
-        <div class="cards">
-          <article class="card profile">
-            <div class="profile-badge">MSc.</div>
-            <h3>Mgr. Petra Novotná</h3>
-            <p>Zakladatelka kliniky · 12 let praxe</p>
-            <span>Manuální terapie · SM systém · Pilates</span>
-          </article>
-          <article class="card profile">
-            <div class="profile-badge">BC.</div>
-            <h3>Bc. Adam Hrubý</h3>
-            <p>Specialista na sportovní zranění</p>
-            <span>Diagnostika · Return-to-play · Kineziotaping</span>
-          </article>
-          <article class="card profile">
-            <div class="profile-badge">PhDr.</div>
-            <h3>PhDr. Jana Lišková</h3>
-            <p>Rehabilitace po operacích</p>
-            <span>Neurologie · Rehabilitace · Psychomotorika</span>
-          </article>
-        </div>
-      </section>
-
-      <section class="section results">
-        <div class="results-grid">
-          <div>
-            <h2>Výsledky, které jsou vidět</h2>
-            <p>
-              Pracujeme s daty: v průměru do 5 návštěv cítí klienti výraznou úlevu a do 8 návštěv se
-              vrací k plnému pohybu.
-            </p>
-            <div class="results-metrics">
-              <div>
-                <h3>+62%</h3>
-                <p>zlepšení mobility</p>
-              </div>
-              <div>
-                <h3>-74%</h3>
-                <p>pokles bolesti</p>
-              </div>
-              <div>
-                <h3>95%</h3>
-                <p>klientů by nás doporučilo</p>
-              </div>
-            </div>
-          </div>
-          <div class="results-card">
-            <h3>Program "Bez bolesti"</h3>
-            <p>
-              Intenzivní plán pro klienty s dlouhodobými obtížemi. Kombinujeme terapii, cvičení a
-              podporu mezi návštěvami.
-            </p>
+            <h3>Obrazovky</h3>
             <ul>
-              <li>1× vstupní diagnostika zdarma</li>
-              <li>Online video-knihovna cviků</li>
-              <li>Pravidelné konzultace s fyzioterapeutem</li>
+              <li>Výběr formátu, jasu a umístění podle prostoru.</li>
+              <li>Instalace a spuštění bez komplikací.</li>
             </ul>
+          </article>
+          <article class="card">
+            <h3>ScreenSoft</h3>
+            <ul>
+              <li>Správa kampaní, aplikací a obsahu pro 1 i 100 lokalit.</li>
+              <li>Plánování a cílení obsahu podle zařízení.</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Servis &amp; správa</h3>
+            <ul>
+              <li>Monitoring, hotline, pravidelná údržba.</li>
+              <li>Možnost kompletní správy obsahu na klíč.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="wrap section" id="reseni">
+        <h2>Vyberte, pro co ScreensON využijete</h2>
+        <p class="section-lead">Každý segment má jiné cíle – my dodáme sestavu i obsahové šablony.</p>
+        <div class="cards solution-grid">
+          <a class="card" href="obce.html"><h3>Obce</h3><p>Informace občanům přehledně a kdykoliv aktuálně.</p><span>Zjistit víc</span></a>
+          <a class="card" href="vzdelavani.html"><h3>Vzdělávání</h3><p>Sdělení pro rodiče i hravý interaktivní obsah.</p><span>Zjistit víc</span></a>
+          <a class="card" href="obchod.html"><h3>Obchod</h3><p>Kampaně, katalogy a engagement na prodejně.</p><span>Zjistit víc</span></a>
+          <a class="card" href="hotely.html"><h3>Hotely</h3><p>Služby, navigace a upsell v lobby i na eventech.</p><span>Zjistit víc</span></a>
+          <a class="card" href="restaurace.html"><h3>Restaurace</h3><p>Menu a promo, které zaujme od vstupu po stůl.</p><span>Zjistit víc</span></a>
+          <a class="card" href="nemocnice.html"><h3>Nemocnice</h3><p>Navigace a informace pro pacienty bez stresu.</p><span>Zjistit víc</span></a>
+          <a class="card" href="servis-sprava.html"><h3>Servis / Správa</h3><p>Monitoring, pravidelná péče a reporting.</p><span>Zjistit víc</span></a>
+          <a class="card" href="ostatni.html"><h3>Ostatní</h3><p>Továrny, posilovny, dopravní uzly… řešení na míru.</p><span>Zjistit víc</span></a>
+        </div>
+      </section>
+
+      <section class="section alt">
+        <div class="wrap">
+          <h2>Od nápadu ke spuštěné obrazovce během pár kroků</h2>
+          <div class="steps">
+            <article><strong>1.</strong><p>Konzultace a návrh</p></article>
+            <article><strong>2.</strong><p>Instalace &amp; spuštění</p></article>
+            <article><strong>3.</strong><p>Obsah &amp; správa v ScreenSoft</p></article>
+            <article><strong>4.</strong><p>Servis a rozvoj</p></article>
           </div>
         </div>
       </section>
 
-      <section id="reference" class="section testimonials">
-        <div class="section-header">
-          <h2>Reference, které mluví za nás</h2>
-          <p>Reálné příběhy lidí, kteří se vrátili k pohybu bez bolesti.</p>
-        </div>
-        <div class="cards">
-          <article class="card">
-            <p>
-              „Po operaci kolene jsem se díky týmu FyzioHelp vrátila ke běhu za 3 měsíce. Perfektní
-              vedení a podpora.“
-            </p>
-            <strong>Iveta K.</strong>
-          </article>
-          <article class="card">
-            <p>
-              „Trpěl jsem dlouhodobou bolestí zad. Po 5 návštěvách cítím obrovskou úlevu a konečně
-              zase spím.“
-            </p>
-            <strong>Martin S.</strong>
-          </article>
-          <article class="card">
-            <p>
-              „Skvělá kombinace manuální terapie a cvičení na doma. Díky aplikaci přesně vím, co
-              dělat.“
-            </p>
-            <strong>Lenka D.</strong>
-          </article>
+      <section class="wrap section teaser">
+        <h2>ScreenSoft pracuje ve 2 vrstvách obsahu</h2>
+        <p>
+          Prezentační vrstva běží pasivně (reklamy, oznámení), aplikační vrstva je interaktivní (menu,
+          dokumenty, ankety). Po nečinnosti se systém vrací zpět.
+        </p>
+        <a class="button" href="software.html">Prohlédnout ScreenSoft</a>
+      </section>
+
+      <section class="wrap section" id="reference">
+        <h2>Ukázky z praxe</h2>
+        <div class="carousel">
+          <article class="card"><h3>Město Beroun</h3><p>Rozcestníky a úřední informace na 65" ve vstupu.</p></article>
+          <article class="card"><h3>Retail park Alfa</h3><p>Promo kampaně s cílením dle prodejen.</p></article>
+          <article class="card"><h3>Hotel NEX</h3><p>Event wall 86" + digitální štítky sálů.</p></article>
         </div>
       </section>
 
-      <section class="section faq">
-        <div class="section-header">
-          <h2>Nejčastější otázky</h2>
-          <p>Vše, co potřebujete vědět před první návštěvou.</p>
-        </div>
-        <div class="faq-grid">
-          <details>
-            <summary>Jak rychle se mohu objednat?</summary>
-            <p>První konzultaci nabízíme obvykle do 7 dnů, případně i dříve podle kapacity.</p>
-          </details>
-          <details>
-            <summary>Co si vzít s sebou?</summary>
-            <p>Komfortní oblečení na cvičení, případně zprávy od lékaře nebo výsledky vyšetření.</p>
-          </details>
-          <details>
-            <summary>Je možné hradit pojišťovnou?</summary>
-            <p>Spolupracujeme s vybranými pojišťovnami, rádi vám poradíme během objednávky.</p>
-          </details>
-          <details>
-            <summary>Nabízíte i online konzultace?</summary>
-            <p>Ano, nabízíme rychlé online konzultace a kontrolu cvičení formou videohovoru.</p>
-          </details>
+      <section class="section alt">
+        <div class="wrap">
+          <h2>Vyberte si, kolik práce chcete řešit</h2>
+          <div class="cards three">
+            <article class="card"><h3>Start</h3><p>1–2 obrazovky, základní nastavení, rychlé spuštění.</p></article>
+            <article class="card"><h3>Pro</h3><p>Více lokalit, cílení obsahu, pokročilé kampaně.</p></article>
+            <article class="card"><h3>Full Service</h3><p>Monitoring, servis i správa obsahu na klíč.</p></article>
+          </div>
+          <a class="button" href="#kontakt">Získat nabídku</a>
         </div>
       </section>
 
-      <section id="kontakt" class="section contact">
-        <div class="contact-grid">
+      <section class="wrap section faq">
+        <h2>FAQ</h2>
+        <details><summary>Jak rychle umíte dodat a nainstalovat?</summary><p>Typicky 2–4 týdny dle složitosti projektu.</p></details>
+        <details><summary>Zvládneme spravovat obsah sami?</summary><p>Ano, ScreenSoft je navržený i pro běžné uživatele.</p></details>
+        <details><summary>Kolik lokalit můžeme mít pod jedním účtem?</summary><p>Od jedné po desítky lokalit s oddělenými právy.</p></details>
+        <details><summary>Co když se obrazovka porouchá?</summary><p>Řešíme hotline, monitoring a servisní zásah dle balíčku.</p></details>
+        <details><summary>Umíte i interaktivní režim?</summary><p>Ano, včetně návratu do prezentační smyčky po nečinnosti.</p></details>
+        <details><summary>Je možné řešit reklamu i komerční pronájmy?</summary><p>Ano, kampaně lze rozdělit na komerční i nekomerční obsah.</p></details>
+      </section>
+
+      <section class="final-cta" id="kontakt">
+        <div class="wrap section-grid">
           <div>
-            <h2>Objednejte se během 2 minut</h2>
-            <p>
-              Vyplňte formulář a náš tým se vám ozve s nejbližším termínem. Nebo zavolejte rovnou.
-            </p>
-            <div class="contact-info">
-              <div>
-                <span>Telefon</span>
-                <strong>+420 777 888 999</strong>
-              </div>
-              <div>
-                <span>E-mail</span>
-                <strong>info@fyziohelp.cz</strong>
-              </div>
-              <div>
-                <span>Adresa</span>
-                <strong>Praha 4 · Na Pankráci 12</strong>
-              </div>
-            </div>
-            <div class="contact-hours">
-              <h4>Otevírací doba</h4>
-              <p>Po–Pá 8:00–19:00 · So 9:00–13:00</p>
-            </div>
+            <h2>Pošlete nám lokalitu / účel / rozměr – připravíme návrh řešení.</h2>
+            <p>Stačí 3 informace a do 24 hodin máte doporučenou sestavu a další kroky.</p>
           </div>
-          <form class="contact-form">
-            <label>
-              Jméno a příjmení
-              <input type="text" placeholder="Jan Novák" />
-            </label>
-            <label>
-              Telefon
-              <input type="tel" placeholder="+420 777 888 999" />
-            </label>
-            <label>
-              E-mail
-              <input type="email" placeholder="jan@email.cz" />
-            </label>
-            <label>
-              S čím potřebujete pomoci?
-              <textarea placeholder="Popište svůj problém"></textarea>
-            </label>
-            <button class="button" type="submit">Odeslat poptávku</button>
-            <p class="form-note">Odesláním souhlasíte se zpracováním osobních údajů.</p>
+          <form class="mini-form">
+            <label>Segment<input type="text" placeholder="Obec / obchod / hotel" /></label>
+            <label>Město<input type="text" placeholder="Praha" /></label>
+            <label>Kontakt<input type="text" placeholder="E-mail nebo telefon" /></label>
+            <button class="button" type="submit">Nezávazná poptávka</button>
+            <p class="form-note">Bez závazků. Bez spamu. Jen konkrétní návrh.</p>
           </form>
         </div>
       </section>
     </main>
 
-    <footer class="footer">
-      <div>
-        <h3>FyzioHelp</h3>
-        <p>Moderní klinika fyzioterapie a rehabilitace.</p>
-      </div>
-      <div>
-        <h4>Rychlé odkazy</h4>
-        <a href="#sluzby">Služby</a>
-        <a href="#prubeh">Průběh</a>
-        <a href="#kontakt">Kontakt</a>
-      </div>
-      <div>
-        <h4>Sledujte nás</h4>
-        <a href="https://instagram.com">Instagram</a>
-        <a href="https://facebook.com">Facebook</a>
-      </div>
-      <div>
-        <h4>Novinky</h4>
-        <p>Jednou měsíčně tipy pro zdravý pohyb.</p>
-        <button class="button small">Přihlásit se</button>
-      </div>
+    <footer class="footer wrap">
+      <p>© 2026 ScreensON</p>
+      <div><a href="software.html">ScreenSoft</a> · <a href="servis-sprava.html">Servis</a> · <a href="#kontakt">Kontakt</a></div>
     </footer>
 
+    <a class="sticky-mini-cta" href="#kontakt">Chci návrh řešení</a>
     <script src="app.js"></script>
   </body>
 </html>
