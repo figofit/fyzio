@@ -1,32 +1,13 @@
-const burger = document.querySelector(".burger");
-const navLinks = document.querySelector(".nav-links");
-const header = document.querySelector(".site-header");
+const yearNode = document.getElementById('year');
+if (yearNode) {
+  yearNode.textContent = String(new Date().getFullYear());
+}
 
-if (burger && navLinks) {
-  burger.addEventListener("click", () => {
-    const isOpen = navLinks.classList.toggle("open");
-    burger.setAttribute("aria-expanded", isOpen);
-  });
-
-  navLinks.querySelectorAll("a").forEach((link) => {
-    link.addEventListener("click", () => {
-      navLinks.classList.remove("open");
-      burger.setAttribute("aria-expanded", "false");
+const navToggle = document.getElementById('navToggle');
+if (navToggle) {
+  document.querySelectorAll('.nav a').forEach((link) => {
+    link.addEventListener('click', () => {
+      navToggle.checked = false;
     });
   });
 }
-
-document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-  anchor.addEventListener("click", (event) => {
-    const target = document.querySelector(anchor.getAttribute("href"));
-    if (target) {
-      event.preventDefault();
-      target.scrollIntoView({ behavior: "smooth" });
-    }
-  });
-});
-
-window.addEventListener("scroll", () => {
-  if (!header) return;
-  header.classList.toggle("scrolled", window.scrollY > 12);
-});
